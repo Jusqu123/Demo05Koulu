@@ -12,7 +12,7 @@ namespace demo05tehtävä1
         {
             //create tyre HUOM NEW STYLE TO WRITE IT
             Tyre tyre = new Tyre { Name = " Nokia ", Model = " hakka ", TyreSize = " 20R465 " };
-
+            Tyre tyre2 = new Tyre { Name = " zingzong ", Model = " pong ", TyreSize = " 234t5 " };
 
             //CREATE CAR
             Vehicle car = new Vehicle { Model = "audi", Name = "R8" };
@@ -23,9 +23,14 @@ namespace demo05tehtävä1
             Console.WriteLine(car.ToString());
             //   List<Tyre> tyres = new List<Tyre>();
 
+            Vehicle car2 = new Vehicle { Model = "ford", Name = "Fiesta" };
 
+            car2.addTyre(tyre2);
+            car2.addTyre(tyre2);
+            car2.addTyre(tyre2);
+            car2.addTyre(tyre2);
+            Console.WriteLine(car2.ToString());
 
-           
 
         }
     }
